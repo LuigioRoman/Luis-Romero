@@ -56,8 +56,16 @@ h1{
   flex-direction: column;
   align-self: flex-end;
   background-color: lawngreen;
-  width: 25%;
-  height: 100px;
+  min-width: 25%;
+  min-height: 100px;
+  margin-bottom: 100px;
+  margin-right: 20px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.content{
+  text-align: left;
 }
 
 .content:nth-child(2){
@@ -70,4 +78,18 @@ h1{
 
 .content:nth-child(4){
   order: 4;
+}
+
+.exp{
+  flex-direction: row-reverse;
+  display: flex;
+  gap: 1rem;
+}
+
+.exp-content:nth-child(2){
+  order: 2;
+}
+
+.exp-content:nth-child(3){
+  order: 3;
 }
